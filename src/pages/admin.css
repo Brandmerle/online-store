@@ -1,0 +1,42 @@
+.admin{
+    padding-top: 10px;
+}
+
+.admin h1{
+    color: darkcyan;
+}
+
+.admin h5{
+    text-align: center;
+}
+
+.admin label{
+    margin-top: 10px;
+}
+
+.admin .parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin .prods{
+    width: 500px;
+}
+
+.admin .cpns{
+    width: 500px;
+}
+
+.admin .prods,
+.admin .cpns{
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: left;
+}
+
+.admin .controls{
+    margin-top: 12px;
+    text-align: center;
+}
