@@ -1,6 +1,11 @@
 .catalog .filters{
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    
 }
 .catalog .filters button{
-    margin-right: 6px;
+    margin-right: 10px;
+    }
+
+.catalog h1{
+    padding: 12px;
 }
