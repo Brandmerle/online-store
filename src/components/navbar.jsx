@@ -1,6 +1,6 @@
 import './navbar.css';
 
-
+import { Link } from 'react-router-dom';
 
 function Navbar(){
     return(
@@ -8,12 +8,13 @@ function Navbar(){
             <nav>
                 <div className="navbar-menu">
                     <span className='title'>The Boardroom</span>
-                        <div>
-                        <a href="">Log In</a>
-                        <a href="">Search</a>
-                        <a href="">Subscribe</a>
-                        <a href="">Menu</a>
-                        </div>
+                        
+                    <Link to="./home">Home</Link>
+                    <Link to="./catalog">Catalog</Link>
+                    <Link to="./about">About Us</Link>
+                    <Link to="./admin">Admin</Link>    
+                    <Link className="end" to="./cart">View Cart</Link>
+                        
                 </div>
             </nav>
         </div>
