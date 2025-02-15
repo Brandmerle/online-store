@@ -30,3 +30,22 @@
     
 }
 
+.product .prices{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product .prices .total{
+    font-size: 20px;
+    font-weight: 600;
+    color: tomato;
+}
+
+.product .prices .price{
+    color: gray;
+}
+
+.product .i-add {
+    font-size: 26px;
+    color: red !important;
+}

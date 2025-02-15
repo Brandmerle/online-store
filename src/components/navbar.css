@@ -46,3 +46,14 @@
         color: #99d6ff;
     }
 }
+
+.navbar-menu .user-info{
+    border: 2px solid green;
+    border-radius: 4px;
+    padding: 7px;
+}
+.i-user{
+    margin-right: 3px;
+    font-size: 22px;
+    color: antiquewhite;
+}

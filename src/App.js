@@ -10,13 +10,17 @@ import Cart from './pages/cart';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/js/all.min.js";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import GlobalProvider from './state/globalProvider';
 
 
 
 function App() {
   return (
+    <GlobalProvider>
     <BrowserRouter>
     <div className="App">
       <Navbar></Navbar>
@@ -33,6 +37,7 @@ function App() {
       <Footer></Footer>
     </div>
     </BrowserRouter>
+  </GlobalProvider>
   );
 }
 
