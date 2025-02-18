@@ -4,8 +4,13 @@
     justify-content: space-around;
     height: 60px;
     align-items: center;
-    background-color: lightgrey;
+   
+    background-color: #165b74;
     font-family:cursive;
     
+}
+
+.footer h4{
+    color: white;
 }
 

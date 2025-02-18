@@ -1,5 +1,5 @@
 import "./home.css"
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function Home() {
     return (
@@ -12,7 +12,7 @@ function Home() {
         </div> 
 
         <div className="controls">
-           <Link className='btn btn-success'to="./catalog">Check out our Catalog!</Link>
+           <Link className='btn btn-success' to="../Catalog">Check out our Catalog!</Link>
         </div>
      </div>
     );

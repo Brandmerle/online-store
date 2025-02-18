@@ -76,17 +76,20 @@ const catalog = [
 
 ];
 
-const categories = ["shortboards", "longboards", "thrusters", "funboards"];
+const categories = ["Shortboards", "Longboards", "Thrusters", "Funboards"];
 
   
 
 function Catalog() {
   return (
+    
+
     <div className="catalog page">
-      <h1>Welcome to our online Quiver</h1>
+      
+      <h1>Welcome to our Online Quiver</h1>
 
       <div className='filters'>
-        {categories.map(cat => <button className= "btn btn-small btn-outline-info" >{cat}</button>)}
+        {categories.map(cat => <button className= "btn btn-small btn-success" >{cat}</button>)}
       </div>
       {catalog.map(prod => <Product data={prod}/>)}  
       
