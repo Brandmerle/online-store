@@ -48,3 +48,7 @@
     font-size: 22px;
     color: antiquewhite;
 }
+
+.navbar-menu .badge {
+    margin-right: 5px;
+}
