@@ -1,6 +1,8 @@
 import { Button } from "bootstrap";
 import Product from "../components/product";
 import "./catalog.css"
+import { useEffect, useState } from "react";
+import DataService from "../services/dataservices";
 
 const catalog = [
   {
@@ -81,6 +83,19 @@ const categories = ["Shortboards", "Longboards", "Thrusters", "Funboards"];
   
 
 function Catalog() {
+
+  const [allProducts, setAllProducts] = useState([])
+
+  async function loadProducts() {
+      const data = await DataService.getProducts();
+      setAllProducts(data);
+  }
+
+  // use effect is executed when the component loads
+  useEffect(function(){
+      loadProducts();
+  }, []);
+
   return (
     
 
@@ -91,7 +106,7 @@ function Catalog() {
       <div className='filters'>
         {categories.map(cat => <button className= "btn btn-small btn-success" >{cat}</button>)}
       </div>
-      {catalog.map(prod => <Product key={prod._id} data={prod}/>)}  
+      {allProducts.map(prod => <Product key={prod._id} data={prod}/>)}  
       
 
     </div>
